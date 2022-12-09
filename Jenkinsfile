@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage ('Build'){
             steps{
-                sh 'docker pull nginx'
+                sh 'mvn clean package'
             }
             post{
                 success{
